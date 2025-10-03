@@ -7,4 +7,4 @@
 * Hobbies
 * Contact
 # Live Site
-* My Portfolio https://rgsantiago2525-coder.github.io/Gomez-Portfolio/ 
+* My Portfolio 
