@@ -1,36 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">YourName</h1>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="typing-effect">Hi, I'm <span class="highlight">Ricardo Gomez</span></h1>
+            <p class="subtitle">Creative Designer & Developer</p>
+            <button class="cta-btn">Explore My Work</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Passionate Creator</h3>
+                    <p>With 5+ years in design and development, I blend creativity with code to build stunning digital experiences.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Skills & Tools</h3>
+                    <p>Proficient in HTML/CSS/JS, Figma, Adobe Suite, and React. Always learning new tech!</p>
+                </div>
+                <div class="about-card">
+                    <h3>Fun Fact</h3>
+                    <p>I once designed a viral app that reached 1M users. Let's create something amazing together!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-modal="project1">
+                    <h3>E-Commerce Site</h3>
+                    <p>A responsive online store with animations and payment integration.</p>
+                    <button class="view-btn">View Details</button>
+                </div>
+                <div class="project-card" data-modal="project2">
+                    <h3>Mobile App UI</h3>
+                    <p>Sleek design for a fitness tracker app, built with React Native.</p>
+                    <button class="view-btn">View Details</button>
+                </div>
+                <div class="project-card" data-modal="project3">
+                    <h3>Portfolio Redesign</h3>
+                    <p>This very site! Modern animations and dark mode toggle.</p>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>HTML/CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Design (Figma)</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>React</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 YourName. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
     </div>
-  </div>
 
-  <!-- Hobbies Section -->
-  <div id="hobbies" class="section">
-    <h2>Hobbies</h2>
-    <ul>
-      <li>📸 Photography</li>
-      <li>🚴 Cycling</li>
-      <li>🎮 Gaming</li>
-      <li>👨‍🍳 Cooking</li>
-      <li>📖 Reading</li>
-    </ul>
-  </div>
-
-  <!-- Contact Section -->
-  <div id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p>📧 ricardo.gomez@gmail.com</p>
-  </div>
-
-  <!-- Footer -->
-  <div id="footer">
-    <p>© 2025 Ricardo Gomez | Portfolio</p>
-  </div>
-
-  <!-- ✅ Link JavaScript -->
-  <script src="script.js"></script>
+    <!-- Link JS -->
+    <script src="script.js"></script>
 </body>
 </html>
