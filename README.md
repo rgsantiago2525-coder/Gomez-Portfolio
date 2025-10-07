@@ -3,8 +3,8 @@
 # Portfolio Sections
 * Home
 * About
+* Projects
 * Skills
-* Hobbies
 * Contact
 # Live Site
 * My Portfolio 
